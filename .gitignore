@@ -1,0 +1,56 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# ---- Environments ----
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+
+# ---- Experiment outputs (do NOT commit) ----
+logs/
+checkpoints/
+results/
+outputs/
+wandb/
+lightning_logs/
+tb_logs/
+*.ckpt
+*.pt
+*.pth
+
+# ---- Data & large artifacts (distribute separately, e.g. Zenodo/HF) ----
+data/
+*.tar.gz
+*.zip
+*.h5
+*.hdf5
+*.edf
+*.npy
+*.npz
+
+# ---- Secrets / tokens / assistant sessions (never commit) ----
+*token*
+*.key
+*_secret*
+.netrc
+.claude/
+.cursor/
+.aider*
