@@ -2,6 +2,24 @@
   <img src="docs/logos/ReBrain.png" alt="ReBrain" width="100%">
 </p>
 
+<h2 align="center">iEEG Can Help EEG: Improving Clinical Scalp EEG Analysis through Intracranial Priors</h2>
+
+<p align="center">
+  <b>Accepted by KDD 2027</b>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.20435"><img src="https://img.shields.io/badge/arXiv-2611.20435-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+  <img src="https://img.shields.io/badge/KDD-2027-1f6feb" alt="KDD 2027">
+  <a href="https://xianglong-bao.github.io/assets/videos/rebrain-promo-720p.mp4"><img src="https://img.shields.io/badge/Promo-Video-e74c3c?logo=youtube&logoColor=white" alt="Promo Video"></a>
+</p>
+
+## 🔥 News
+
+- *2026.11*: ReBrain is accepted by **KDD 2027**.
+
+## 💡 Overview
+
 ReBrain fits a signal-to-signal model on intracranial EEG (iEEG) alone, freezes it,
 and inserts it as a plug-and-play front-end that re-expresses scalp EEG through the
 iEEG-learned representation before any downstream model: no pairing, no fine-tuning,
@@ -63,6 +81,24 @@ configs/                           training configs (main prior + ablations)
 scripts/convert_swec_to_bids.py    raw SWEC .mat -> BIDS
 downstream/pipeline.py             worked reprogram + example
 analysis/                          mechanism-figure analysis (per-feature d', denoiser-vs-amplifier)
+```
+
+## 📚 Further Reading
+
+- [Denoised but Not Improved: What EEG Denoising Does to a Downstream Task](https://arxiv.org/abs/2611.29256) · IEEE Symposium on CI in Health and Medicine 2027. EEG denoising optimizes a proxy objective (a clean-looking waveform) that is misaligned with downstream task metrics.
+
+## 📖 Citation
+
+If you find ReBrain useful, please cite:
+
+```bibtex
+@article{bao2026ieeg,
+  title   = {iEEG Can Help EEG: Improving Clinical Scalp EEG Analysis through Intracranial Priors},
+  author  = {Bao, Xianglong and Ding, Yi and Li, Zengxiang and Liu, Nan and Wang, Kewen and Wang, Zhe and Jin, Ming},
+  journal = {arXiv preprint arXiv:2611.20435},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2611.20435}
+}
 ```
 
 ## 🙏 Acknowledgments
